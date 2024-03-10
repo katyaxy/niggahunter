@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>You haunted nigga</title>
+<style>
+    body {
+        background-color: #000;
+        color: #fff;
+        text-align: center;
+        font-family: 'Arial', sans-serif;
+    }
+    h1 {
+        font-size: 2rem;
+    }
+    button {
+        background-color: #FF4500;
+        color: #fff;
+        border: none;
+        padding: 10px 20px;
+        margin: 10px;
+        cursor: pointer;
+    }
+    button:hover {
+        background-color: #FF6347;
+    }
+<audio id="rocketQueen">
+    <source src="C:\Users\Casper\Downloads\Rocket Queen.mp3" type="audio/mp3">
+</audio>
+</style>
+</head>
+<body>
+<h1>Are you alive?</h1>
+<button id="yesButton" onclick="yesClicked()">Yes</button>
+<button id="noButton" onclick="noClicked()">No</button>
+<script>
+function yesClicked() {
+    alert('Then why you arent around?');
+}
+function noClicked() {
+    let leavePage = confirm('You are cuz rocket queen didnt play at you funural?');
+document.getElementById("rocketQueen").play();
+    if (leavePage) {
+        window.location.href = 'https://www.google.com';
+    }
+}
+</script>
+</body>
+</html>
